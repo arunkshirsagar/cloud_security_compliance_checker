@@ -28,6 +28,18 @@ def remediate_s3_bucket(bucket_name):
 
         subprocess.run(["terraform", "-chdir=terraform", "state", "rm", "aws_s3_bucket.remediate"], check=True)
 
+        # Define the folder and file pattern (e.g., all files in the folder)
+        folder_path = r'terraform'
+        file_patterns = ['*.backup', '*.tfstate', '*.lock.hcl']  # List of file patterns
+
+        # Loop through each file pattern and delete matching files
+        for pattern in file_patterns:
+            # Construct the command to delete files
+            command = f'del /q {folder_path}\\{pattern}'
+
+            # Run the command using subprocess
+            subprocess.run(command, shell=True, check=True)
+            
     except Exception as e:
         logging.error(f"Failed to remediate bucket {bucket_name}: {e}")
         print(f"Failed to remediate bucket {bucket_name}: {e}")
