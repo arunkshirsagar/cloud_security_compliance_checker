@@ -1,0 +1,18 @@
+INFO:root:Remediated bucket: mybucketteraform
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', '-var', 'bucket_name=mybucketteraform']' returned non-zero exit status 1.
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', 'mybucketteraform']' returned non-zero exit status 1.
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', 'mybucketteraform']' returned non-zero exit status 1.
+INFO:root:Remediated bucket: mybucketteraform
+INFO:root:Remediated bucket: mybucketteraform
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'state', 'rm ', 'aws_s3_bucket.remediate']' returned non-zero exit status 1.
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', 'mybucketteraform']' returned non-zero exit status 1.
+INFO:root:Remediated bucket: mybucketteraform
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', '-var', 'bucket_name=mybucketteraform']' returned non-zero exit status 1.
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', 'mybucketteraform']' returned non-zero exit status 1.
+ERROR:root:Failed to remediate bucket mybucketteraform: Command '['terraform', '-chdir=terraform', 'apply', '-auto-approve']' returned non-zero exit status 1.
+INFO:root:Remediated bucket: mys3buckettf
+ERROR:root:Failed to remediate bucket mys3buckettf: 'tuple' object does not support the context manager protocol
+ERROR:root:Failed to remediate bucket mys3buckettf: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', '-var', 'bucket_name=mys3buckettf']' returned non-zero exit status 1.
+ERROR:root:Failed to remediate bucket mys3buckettf: Command '['terraform', '-chdir=terraform', 'import', 'aws_s3_bucket.remediate', 'mys3buckettf']' returned non-zero exit status 1.
+INFO:root:Remediated bucket: mys3buckettf
+INFO:root:Remediated bucket: mys3buckettf
